@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% block title %}Lista Usuario{% endblock %}
+
+<div class="conatainer">
+    
+    {% for usuario in usuarios %}
+        <li>{{ usuario.nombre }} - {{ usuario.apellido }} - {{ usuario.email }}</li>
+    {% endfor %}
+
+</div>
+
+{% endblock %}
